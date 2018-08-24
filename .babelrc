@@ -1,27 +1,38 @@
 {
-  "presets": [
-    "env",
-    "stage-0",
-    "react"
+  presets: [
+    'stage-0',
+    'react'
   ],
-  "env": {
-    "emotion": {
-      "plugins": [
+  env: {
+    es: {
+      presets: [
+        [ 'env', {
+          modules: false,
+          targets: {
+            browsers: 'last 2 versions, > 5%'
+          }
+        } ],
+        'stage-0',
+        'react'
+      ]
+    },
+    emotion: {
+      plugins: [
         [
-          "transform-rename-import",
+          'transform-rename-import',
           {
-            "replacements": [
+            replacements: [
               {
-                "original": "^system-components$",
-                "replacement": "system-components/emotion"
+                original: '^system-components$',
+                replacement: 'system-components/emotion'
               },
               {
-                "original": "^styled-components$",
-                "replacement": "emotion-theming"
+                original: '^styled-components$',
+                replacement: 'emotion-theming'
               },
               {
-                "original": "^grid-styled$",
-                "replacement": "grid-styled/emotion"
+                original: '^grid-styled$',
+                replacement: 'grid-styled/emotion'
               }
             ]
           }
