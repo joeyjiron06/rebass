@@ -1,0 +1,36 @@
+{
+  "name": "@rebass/forms",
+  "version": "1.0.0-0",
+  "description": "React UI components for HTML forms",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepare": "npm run clean && npm run build",
+    "clean": "rm -rf dist && mkdir dist",
+    "build": "babel src/index.js -o dist/index.js"
+  },
+  "keywords": [],
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-emotion": "^9.2.8",
+    "react-test-renderer": "^16.5.0",
+    "styled-components": "^4.0.0-beta.1"
+  },
+  "dependencies": {
+    "rebass": "^3.0.0-9",
+    "styled-system": "^3.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rebassjs/rebass.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rebassjs/rebass/issues"
+  },
+  "homepage": "https://github.com/rebassjs/rebass"
+}

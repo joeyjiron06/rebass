@@ -43,7 +43,7 @@
     "emotion": "^9.2.10",
     "jest": "^23.6.0",
     "jest-styled-components": "^6.2.0",
-    "mdx-go": "^1.1.10",
+    "mdx-go": "^2.0.0-23",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-emotion": "^9.2.10",
