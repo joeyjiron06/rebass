@@ -1,9 +1,7 @@
 import React from 'react'
 import {
   StyleProvider,
-  NavLinks,
-  ScrollTop
-} from 'mdx-go/styled-components'
+} from 'mdx-go'
 import * as components from '../src'
 import { Box } from '../src'
 
@@ -45,6 +43,5 @@ export const Root = props =>
     >
       {props.children}
     </Box>
-    <ScrollTop />
   </StyleProvider>
 

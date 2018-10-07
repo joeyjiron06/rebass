@@ -8,8 +8,8 @@
     "prepare": "npm run clean && babel src -d dist && npm run emotion",
     "clean": "rm -rf dist",
     "emotion": "NODE_ENV=emotion babel src -d dist/emotion",
-    "start": "mdx-go docs",
-    "docs": "mdx-go build docs -d site",
+    "start": "npx mdx-go docs",
+    "docs": "npx mdx-go build docs -d site",
     "cover": "jest --coverage --coverageReporters html lcov && codecov",
     "test": "jest",
     "size": "bundlesize"
@@ -43,7 +43,6 @@
     "emotion": "^9.2.10",
     "jest": "^23.6.0",
     "jest-styled-components": "^6.2.0",
-    "mdx-go": "^1.1.10",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-emotion": "^9.2.10",
