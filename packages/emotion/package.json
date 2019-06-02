@@ -1,0 +1,25 @@
+{
+  "name": "@rebass/emotion",
+  "version": "3.2.0-0",
+  "description": "React primitive UI components built with styled-system",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "NODE_ENV=emotion babel ../rebass/src -d . --root-mode upward"
+  },
+  "peerDependencies": {
+    "@emotion/core": "^10.0.0",
+    "@emotion/styled": "^10.0.0"
+  },
+  "dependencies": {
+    "styled-system": "^5.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rebassjs/rebass.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rebassjs/rebass/issues"
+  },
+  "homepage": "https://github.com/rebassjs/rebass"
+}

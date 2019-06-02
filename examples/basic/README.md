@@ -24,7 +24,6 @@ rebass-project/
   src/
   examples/
   tests/
-    snapshots.js
 ```
 
 ---

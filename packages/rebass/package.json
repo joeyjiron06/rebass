@@ -1,0 +1,43 @@
+{
+  "name": "rebass",
+  "version": "3.2.0-0",
+  "description": "React primitive UI components built with styled-system",
+  "main": "dist/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "prepare": "babel src -d dist --root-mode upward",
+    "clean": "rm -rf dist",
+    "size": "npx bundlesize"
+  },
+  "keywords": [
+    "components",
+    "react",
+    "react-component",
+    "ui",
+    "design-system",
+    "styled-system",
+    "styled-components",
+    "presentational",
+    "stateless",
+    "functional"
+  ],
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "dependencies": {
+    "styled-system": "^5.0.2"
+  },
+  "devDependencies": {
+    "styled-components": "^4.2.1"
+  },
+  "peerDependencies": {
+    "styled-components": ">=4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rebassjs/rebass.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rebassjs/rebass/issues"
+  },
+  "homepage": "https://github.com/rebassjs/rebass"
+}

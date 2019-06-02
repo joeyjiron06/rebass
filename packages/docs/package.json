@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "name": "rebassjs.org",
+  "version": "3.2.0-0",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "now-build": "npm run build",
+    "svg": "npx scrs src/Logo.js --svg > static/logo.svg",
+    "card": "npx repng src/twitter-card.js -w 1024 -h 512 -d static -f card.png",
+    "icon": "npx repng src/Icon.js -w 512 -h 512 -d static -f icon.png"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.11",
+    "@mdx-js/mdx": "^1.0.20",
+    "@mdx-js/react": "^1.0.20",
+    "@rebass/emotion": "^3.2.0-0",
+    "@styled-system/css": "^5.0.1",
+    "gatsby": "^2.0.83",
+    "gatsby-plugin-emotion": "^4.0.7",
+    "gatsby-plugin-google-analytics": "^2.0.8",
+    "gatsby-plugin-layout": "^1.0.11",
+    "gatsby-plugin-mdx": "^1.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.5",
+    "github-slugger": "^1.2.1",
+    "is-absolute-url": "^3.0.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-helmet": "^5.2.0",
+    "react-live": "^1.12.0",
+    "react-sidebar": "^3.0.2",
+    "rebass": "^3.2.0-0",
+    "reline": "^1.0.0-beta.3"
+  }
+}
