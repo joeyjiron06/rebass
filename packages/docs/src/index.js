@@ -1,7 +1,7 @@
 import React from 'react'
 import Root from './root'
 import Page from './page'
-import Sidebar from './sidebar'
+import Layout from './layout'
 
 export const wrapPageElement = ({ element, props }) => {
   const children = (
@@ -13,9 +13,9 @@ export const wrapPageElement = ({ element, props }) => {
   if (props.location.pathname === '/') return children
 
   return (
-    <Sidebar>
+    <Layout>
       {children}
-    </Sidebar>
+    </Layout>
   )
 }
 
