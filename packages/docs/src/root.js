@@ -1,15 +1,13 @@
-// root layout
 import React from 'react'
 import { Link as GLink } from 'gatsby'
 import { ThemeContext, Global } from '@emotion/core'
 import styled from '@emotion/styled'
 import { MDXProvider } from '@mdx-js/react'
-import { Helmet } from 'react-helmet'
 import { Box, Heading, Link } from '@rebass/emotion'
 import Slugger from 'github-slugger'
 import isAbsoluteURL from 'is-absolute-url'
-import LiveCode from '../LiveCode'
-import theme from '../theme'
+import LiveCode from './live-code'
+import theme from './theme'
 
 const slugger = new Slugger()
 
@@ -51,7 +49,7 @@ const code = ({
   <Pre className={className} {...props} />
 )
 
-const a = ({ href, ...props }) => isAbsoluteURL(href)
+const a = ({ href, ...props }) => isAbsoluteURL(href) || /^#/.test(href)
   ? <Link href={href} {...props} />
   : <Link as={GLink} to={href} {...props} />
 
@@ -131,28 +129,16 @@ export default props =>
   <ThemeContext.Provider value={theme}>
     <MDXProvider components={components}>
       <>
-        <Helmet>
-          <title>Rebass</title>
-          <meta name='description' content='React UI component library & design system, built with styled-components and styled-system' />
-          <meta name='twitter:card' content='summary_large_image' />
-          <meta name='twitter:site' content='@jxnblk' />
-          <meta name='twitter:title' content='Rebass' />
-          <meta name='twitter:description' content='React UI component library & design system, built with styled-components and styled-system' />
-          <meta name='twitter:image' content='https://rebassjs.org/card.png' />
-          <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Roboto+Mono' />
-        </Helmet>
         <Global
           styles={{
-            body: { margin: 0 }
+            body: {
+              margin: 0,
+              fontFamily: 'system-ui, sans-serif',
+              lineHeight: 1.5,
+            }
           }}
         />
-        <Box
-          {...props}
-          style={{
-            fontFamily: 'system-ui, sans-serif',
-            lineHeight: 1.5,
-          }}
-        />
+        <div {...props} />
       </>
     </MDXProvider>
   </ThemeContext.Provider>

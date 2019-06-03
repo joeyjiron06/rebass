@@ -172,7 +172,8 @@ Refer to each component's docs for addition props:
 - [Image](/Image)
 - [Card](/Card)
 
-[styled-system]: https://styled-system.com
-[space]: https://styled-system.com/api/#space
-[color]: https://styled-system.com/api/#color
-[responsive]: https://styled-system.com/responsive-styles
+[styled-system]: https://github.com/jxnblk/styled-system
+[space]: https://github.com/jxnblk/styled-system/blob/master/docs/api.md#space-responsive
+[color]: https://github.com/jxnblk/styled-system/blob/master/docs/api.md#color-responsive
+[responsive]: https://github.com/jxnblk/styled-system/blob/master/docs/responsive-styles.md
+[system-components]: https://github.com/jxnblk/styled-system/tree/master/system-components

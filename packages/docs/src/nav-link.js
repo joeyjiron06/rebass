@@ -4,12 +4,13 @@ import css from '@styled-system/css'
 import { Link } from '@rebass/emotion'
 import { Link as GLink } from 'gatsby'
 
+
 const NavLink = styled(Link)(css({
   display: 'block',
   textDecoration: 'none',
   fontWeight: 'bold',
   '&[aria-current]': {
-    color: 'blue'
+    color: 'blue',
   }
 }))
 
@@ -19,10 +20,6 @@ NavLink.defaultProps = {
   py: 1,
   color: 'inherit',
 }
-
-const getProps = ({ isCurrent, className }) => isCurrent ? {
-  className: className + ' active'
-} : null
 
 export default props =>
   <NavLink

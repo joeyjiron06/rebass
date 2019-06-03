@@ -101,4 +101,4 @@ export default props =>
 
 Read more about [Theming Rebass components](/theming).
 
-[styled-system]: https://styled-system.com
+[styled-system]: https://github.com/jxnblk/styled-system

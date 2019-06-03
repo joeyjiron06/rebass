@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { keyframes } from '@emotion/core'
-import { layout, width, height } from 'styled-system'
+import { width, height } from 'styled-system'
 import { theme } from '@rebass/emotion'
 
 const Svg = styled(({

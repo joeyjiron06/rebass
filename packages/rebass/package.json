@@ -24,6 +24,7 @@
   "author": "Brent Jackson",
   "license": "MIT",
   "dependencies": {
+    "react-live": "^2.1.2",
     "styled-system": "^5.0.2"
   },
   "devDependencies": {
